@@ -76,6 +76,14 @@ By the end of this level, you should:
 - Learn more about [ApplicationSets](https://argo-cd.readthedocs.io/en/stable/operator-manual/applicationset/) and
   the [Application Specification](https://argo-cd.readthedocs.io/en/stable/user-guide/application-specification/) in
   the [ArgoCD docs](https://argo-cd.readthedocs.io/en/stable/user-guide/application-specification/).
+
+> 📦 **About Kustomize:** This challenge uses [Kustomize](https://kustomize.io/) under the hood to manage Kubernetes
+> manifests. Kustomize allows us to maintain a **base** set of manifests (deployment, service) and apply
+> environment-specific customizations through **overlays** (staging, prod). Each overlay can modify the base
+> configuration—like changing replica counts or namespaces—without duplicating YAML. Argo CD automatically detects and
+> applies these Kustomize configurations, so you don't need to run Kustomize commands manually. Your focus is on fixing
+> the ApplicationSet to properly reference these Kustomize-managed paths.
+
 - After making changes, apply them:
   ```
   kubectl apply -n argocd -f adventures/01-echoes-lost-in-orbit/beginner/manifests/appset.yaml
