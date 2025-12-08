@@ -54,7 +54,7 @@ Your Codespace comes pre-configured with the following tools to help you solve t
 
 ### 1. Start Your Challenge
 
-> 📖 **First time?** Check out the [Getting Started Guide](/start-a-challenge) for detailed instructions on
+> 📖 **First time?** Check out the [Getting Started Guide](../../start-a-challenge) for detailed instructions on
 > forking, starting a Codespace, and waiting for infrastructure setup.
 
 Quick start:
@@ -197,5 +197,5 @@ For comprehensive validation and to officially claim completion:
 2. **Manually trigger the verification workflow** on GitHub Actions
 3. **Share your success** with the [community](TODO)
 
-> 📖 **Need detailed verification instructions?** Check out the [Verification Guide](/verification) for
+> 📖 **Need detailed verification instructions?** Check out the [Verification Guide](../../verification) for
 > step-by-step instructions on both smoke tests and GitHub Actions workflows.
